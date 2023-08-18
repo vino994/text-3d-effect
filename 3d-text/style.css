@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+#text{
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    transform: rotate(-24deg) skew(28deg);
+    color: white;
+}
+#text:before{
+    position: absolute;
+    content: attr(data-set);
+    top: 30px;
+    left: -30px;
+    text-shadow: none;
+    color: rgba(0,0,0,0.3);
+    filter: blur(8px);
+    z-index: -1;
+}
